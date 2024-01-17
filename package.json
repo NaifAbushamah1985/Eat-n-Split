@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build --max warnings=0",
+    "build": "cross-env CI=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -38,9 +38,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   },
-  
-    "rules": {
-      "no-unused-vars": "off"  
-    }
-  
+  "rules": {
+    "no-unused-vars": "off"
+  }
 }
